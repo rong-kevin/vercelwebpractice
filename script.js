@@ -1,13 +1,6 @@
-document.body.innerHTML = `
-<div style="
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100vh;
-  font-size:48px;
-  background:black;
-  color:red;
-">
-  SITE BROKEN
-</div>
-`;
+const actionButton = document.getElementById('actionButton');
+const message = document.getElementById('message');
+
+actionButton.addEventListener('click', () => {
+  message.textContent = '你剛剛按了按鈕！網站架構已經建立完成。';
+});
